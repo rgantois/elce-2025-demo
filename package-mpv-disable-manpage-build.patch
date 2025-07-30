@@ -1,0 +1,12 @@
+Index: buildroot-2025.02.5/package/mpv/mpv.mk
+===================================================================
+--- buildroot-2025.02.5.orig/package/mpv/mpv.mk
++++ buildroot-2025.02.5/package/mpv/mpv.mk
+@@ -24,6 +24,7 @@ MPV_CONF_OPTS = \
+ 	-Dopensles=disabled \
+ 	-Drubberband=disabled \
+ 	-Duchardet=disabled \
++	-Dmanpage-build=disabled \
+ 	-Dvapoursynth=disabled
+ 
+ ifeq ($(BR2_REPRODUCIBLE),y)

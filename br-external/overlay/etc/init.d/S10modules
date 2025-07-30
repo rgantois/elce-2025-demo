@@ -1,0 +1,5 @@
+#!/bin/sh
+
+modprobe tidss
+modprobe sii902x
+modprobe display-connector

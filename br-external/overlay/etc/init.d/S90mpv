@@ -1,0 +1,7 @@
+#!/bin/sh
+
+gunzip -kc /dev/mtdblock5 > /tmp/assets.tar
+
+cd /tmp && tar -xf assets.tar
+
+mpv --no-audio --fs --vo=drm --loop --terminal=no /tmp/penguin$((1 + $RANDOM % 4)).gif &
