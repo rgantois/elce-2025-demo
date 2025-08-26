@@ -99,7 +99,8 @@ snagboot/venv: snagboot
 
 snagboot:
 	rm -rf snagboot
-	git clone git@github.com:bootlin/snagboot.git -b ea8a11d688e463d778e682c39c7e9dca41e8e201
+	git clone git@github.com:bootlin/snagboot.git
+	cd snagboot && git checkout ea8a11d688e463d778e682c39c7e9dca41e8e201
 
 clean:
 	rm -rf snagboot
