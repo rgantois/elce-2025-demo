@@ -47,3 +47,8 @@ soc-models:
         - image: "spinor.img"
           part: ospi.rootfs
 
+    # nb: a "no-recovery" arg to the "reset" task would be nice
+    - task: run
+      args:
+        - "reset"
+

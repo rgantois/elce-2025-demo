@@ -1,0 +1,2 @@
+CONFIG_BOOTDELAY=0
+CONFIG_BOOTCOMMAND="bootflow scan -lb mmc0"
